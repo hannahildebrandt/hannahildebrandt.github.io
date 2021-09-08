@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script>
+
+            document.addEventListener('copy', (event) => {
+                var address = document.getSelection().toString();
+                address = address.replace('@em', '@hanna').replace('moc.tdnarbedlihannah', 'me') + 'hildebrandt.com';
+                event.clipboardData.setData('text', address);
+                event.preventDefault();
+            });
+
+        </script>
+        <style>
+
+            body {
+                font-family: 'Source Serif Pro', serif;
+                font-size: 1.8rem;
+                padding: 12rem 2rem 2rem 6rem;
+                color: rgb(112, 41, 57);
+                background: linear-gradient(132deg, rgba(255,255,255,1) 16%, rgba(241,241,241,1) 65%, rgba(255,239,245,1) 100%);
+            }
+
+            strong, em, .address {
+                font-family: 'Source Code Pro', monospace;
+                font-style: inherit;
+                font-weight: inherit;
+            }
+
+                strong {
+                    color: rgb(151, 50, 74);
+                }
+
+            p {
+                max-width: 48rem;
+            }
+
+                p .address {
+                    unicode-bidi:bidi-override;
+                    direction: rtl;
+                    color: rgb(202, 75, 105);
+                }
+
+                    p .address span {
+                        display: none;
+                    }
+
+        </style>
+        <title>
+            hannahildebrandt.com
+        </title>
+    </head>
+    <body>
+        <p><em>Hey</em>, if you're here you're probably looking for <strong>Hanna</strong>,<br/> a Vancouver-based game dev who's worked on a bunch of games and won a bunch of awards and is now kind of lying low while working on increasingly cool things. You can reach her at <span class="address">moc&#46;tdnarbe<span>don't worry about it</span>dlihannah&#64;em</span></p>
+    </body>
+</html>
